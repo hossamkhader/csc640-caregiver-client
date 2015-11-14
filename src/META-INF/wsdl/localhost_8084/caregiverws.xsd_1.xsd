@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="addOrUpdateMonitor" type="tns:addOrUpdateMonitor" />
+
+<xs:element name="addOrUpdateMonitorResponse" type="tns:addOrUpdateMonitorResponse" />
+
+<xs:element name="addOrUpdatePerson" type="tns:addOrUpdatePerson" />
+
+<xs:element name="addOrUpdatePersonResponse" type="tns:addOrUpdatePersonResponse" />
+
+<xs:element name="deleteMonitor" type="tns:deleteMonitor" />
+
+<xs:element name="deleteMonitorResponse" type="tns:deleteMonitorResponse" />
+
+<xs:element name="deletePerson" type="tns:deletePerson" />
+
+<xs:element name="deletePersonResponse" type="tns:deletePersonResponse" />
+
+<xs:element name="getElderlyCaregivers" type="tns:getElderlyCaregivers" />
+
+<xs:element name="getElderlyCaregiversResponse" type="tns:getElderlyCaregiversResponse" />
+
+<xs:element name="getElderlyDoctorAppointments" type="tns:getElderlyDoctorAppointments" />
+
+<xs:element name="getElderlyDoctorAppointmentsResponse" type="tns:getElderlyDoctorAppointmentsResponse" />
+
+<xs:element name="getElderlyFamilyMembers" type="tns:getElderlyFamilyMembers" />
+
+<xs:element name="getElderlyFamilyMembersResponse" type="tns:getElderlyFamilyMembersResponse" />
+
+<xs:element name="getElderlyHealthMonitors" type="tns:getElderlyHealthMonitors" />
+
+<xs:element name="getElderlyHealthMonitorsResponse" type="tns:getElderlyHealthMonitorsResponse" />
+
+<xs:element name="getElderlyInfo" type="tns:getElderlyInfo" />
+
+<xs:element name="getElderlyInfoResponse" type="tns:getElderlyInfoResponse" />
+
+<xs:element name="getElderlyMedicationMonitors" type="tns:getElderlyMedicationMonitors" />
+
+<xs:element name="getElderlyMedicationMonitorsResponse" type="tns:getElderlyMedicationMonitorsResponse" />
+
+<xs:element name="getElderlysInfo" type="tns:getElderlysInfo" />
+
+<xs:element name="getElderlysInfoResponse" type="tns:getElderlysInfoResponse" />
+
+<xs:element name="getPersonInfo" type="tns:getPersonInfo" />
+
+<xs:element name="getPersonInfoResponse" type="tns:getPersonInfoResponse" />
+
+<xs:element name="getType" type="tns:getType" />
+
+<xs:element name="getTypeResponse" type="tns:getTypeResponse" />
+
+<xs:complexType name="getElderlyHealthMonitors">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyHealthMonitorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyMedicationMonitors">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyMedicationMonitorsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlysInfo">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getElderlysInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyFamilyMembers">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyFamilyMembersResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePerson">
+<xs:sequence>
+<xs:element name="type" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deletePersonResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addOrUpdatePerson">
+<xs:sequence>
+<xs:element name="person" type="xs:string" minOccurs="0" />
+<xs:element name="elderly_username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addOrUpdatePersonResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyCaregivers">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyCaregiversResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyDoctorAppointments">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyDoctorAppointmentsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyInfo">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getElderlyInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMonitor">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMonitorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getType">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getTypeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonInfo">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getPersonInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addOrUpdateMonitor">
+<xs:sequence>
+<xs:element name="monitor" type="xs:string" minOccurs="0" />
+<xs:element name="username" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addOrUpdateMonitorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

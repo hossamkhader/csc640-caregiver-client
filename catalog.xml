@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://192.168.150.1:8084/caregiverws?wsdl" uri="xml-resources/web-service-references/caregiverws/wsdl/192.168.150.1_8084/caregiverws.wsdl"/>
+    <system systemId="http://192.168.150.1:8084/caregiverws?xsd=1" uri="xml-resources/web-service-references/caregiverws/wsdl/192.168.150.1_8084/caregiverws.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/caregiverws?wsdl" uri="xml-resources/web-service-references/caregiverws/wsdl/localhost_8084/caregiverws.wsdl"/>
+    <system systemId="http://localhost:8084/caregiverws?xsd=1" uri="xml-resources/web-service-references/caregiverws/wsdl/localhost_8084/caregiverws.xsd_1.xsd"/>
+</catalog>
